@@ -51,6 +51,8 @@ object Main extends App {
 
   val list = List(2,5,7,1,4)
   list.sorted // метод сортировки
+  for (i <- list.sorted)
+    println(i)
 
   val random_list = List.fill(Random.nextInt(100))(Random.nextInt(1000)) // список с рандомным кол-вом элементов и рандомным значением
   def merge(as: List[Int], bs: List[Int], acc: List[Int] = Nil): List[Int] =
