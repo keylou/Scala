@@ -1,51 +1,51 @@
-abstract class Interface {
-  val Feed = new scala.collection.mutable.HashMap[Int, String]
-
-  def save(tweetid: Int, text: String): Unit
+trait UserStore {
+  def save(tweet: Tweet): Unit
 
   def delete(tweetid: Int): Unit
 
   def redact(tweetid: Int, text: String): Unit
 
-  def get(tweetid: Int): (Int, Option[String])
+  def get(tweetid: Int): Option[Tweet]
 }
 
-trait Realisation extends Interface {
-  def save(tweetid: Int, text: String): Unit = {
-    if (Feed.contains(tweetid))
-      redact(tweetid, text)
+class UserStoreImpl extends UserStore {
+  val feed = new scala.collection.mutable.HashMap[Int, Tweet]
+  def save(tweet: Tweet): Unit = {
+    if (feed.contains(tweet.id))
+      redact(tweet.id, tweet.text)
     else {
       println("Added")
-      Feed += tweetid -> text
+      feed += tweet.id -> tweet
     }
   }
 
   def delete(tweetid: Int): Unit = {
-    if (Feed.contains(tweetid)) {
+    if (feed.contains(tweetid)) {
       println("Deleted")
-      Feed -= tweetid
+      feed -= tweetid
     }
     else
       println("Not deleted")
   }
 
   def redact(tweetid: Int, text: String): Unit = {
-    if (Feed.contains(tweetid)) {
+    if (feed.contains(tweetid)) {
       println("Redacted")
-      Feed(tweetid) = text
+      feed(tweetid).text = text
     }
     else
       println("Not redacted")
   }
 
-  def get(tweetid: Int): (Int, Option[String]) = {
-    if (Feed.get(tweetid) != None) {
+  def get(tweetid: Int): Option[Tweet] = {
+    if (feed.get(tweetid) != None) {
       println("Gotten")
-      (tweetid, Feed.get(tweetid))
+      feed.get(tweetid)
     }
     else {
       println("Not gotten")
-      (-1, None)
+      feed.get(tweetid)
     }
   }
 }
+case class Tweet(id: Int, var text: String, user: String)
