@@ -10,7 +10,7 @@ class MainTest extends AnyFunSuite {
   test("dao save") {
     println("dao save")
     val dao = new TweetDaoImpl
-    val tweet = Tweet("Test", "HUI")
+    val tweet = Tweet("Test", "name")
     dao.save(tweet)
     assert(dao.getFeed.contains(1))
   }
@@ -20,8 +20,8 @@ class MainTest extends AnyFunSuite {
     val dao = mock(classOf[TweetDaoImpl])
     val service = new TweetService(dao)
 
-    var tweet = Tweet("Test", "HUI")
-    val tweetAns = Tweet("Test", "HUI")
+    var tweet = Tweet("Test", "name")
+    val tweetAns = Tweet("Test", "name")
     tweetAns.id = 1
 
     when(dao.save(any())).thenReturn(tweetAns)
