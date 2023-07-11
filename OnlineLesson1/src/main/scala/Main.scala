@@ -1,26 +1,31 @@
+import dto.Tweet
+import dao.TweetDao
+import dao.impl.TweetDaoImpl
+
 object Main extends App {
-  // 12345 -> "textA", 34521 -> textB, 54321 -> "textC"
-  val Tweet1 = (12345, "textA")
-  val Tweet2 = (34521, "textB")
-  val Tweet3 = (54321, "textC")
-  val F = new Interface with Realisation
-  F.save(Tweet1._1,Tweet1._2)
-  F.save(Tweet2._1,Tweet2._2)
-  F.save(Tweet3._1,Tweet3._2)
-  println(F.Feed)
+  // 1 -> "textA", 2 -> textB, 3 -> "textC"
 
-  F.save(12345,Tweet2._2)
-  println(F.Feed)
+  private val Tweet1 = Tweet("textA", "Alex")
+  private val Tweet2 = Tweet("textB", "Bob")
+  private val Tweet3 = Tweet("textC", "Clara")
+  private val F:TweetDao = new TweetDaoImpl
+  F.save(Tweet1)
+  F.save(Tweet2)
+  F.save(Tweet3)
+  println(F.getFeed)
 
-  F.redact(Tweet1._1, "Tweet1 is redacted")
-  println(F.Feed)
+  F.save(Tweet("textAAAAAAAAAAAA", "Alex")) // 4
+  println(F.getFeed)
 
-  F.delete(Tweet2._1)
-  println(F.Feed)
+  F.redact(Tweet1.id, "Tweet1 is redacted")
+  println(F.getFeed)
 
-  val FoundTweet1 = F.get(Tweet1._1)
+  F.delete(Tweet2.id)
+  println(F.getFeed)
+
+  private val FoundTweet1 = F.get(Tweet1.id)
   println(FoundTweet1)
 
-  val FoundTweet2 = F.get(Tweet2._1)
+  private val FoundTweet2 = F.get(Tweet2.id)
   println(FoundTweet2)
 }
