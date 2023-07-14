@@ -10,7 +10,7 @@ trait TweetDao {
 
   def delete(tweetId: Int): Unit
 
-  def redact(tweetId: Int, text: String): Tweet
+  def redact(tweetId: Int, text: String): Option[Tweet]
 
   def get(tweetId: Int): Option[Tweet]
 }

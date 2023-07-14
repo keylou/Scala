@@ -1,6 +1,4 @@
 package dto
 
 
-case class Tweet(var text: String, user: String) {
-  var id: Int = 0
-}
+case class Tweet(text: String, user: String,id: Int=0)

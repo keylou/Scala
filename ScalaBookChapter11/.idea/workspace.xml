@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07eb6b3c-1189-48a3-b4c2-df7c65b7c0bc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../OnlineLesson1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$14d02186d6f6561b89fd$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$14d02186d6f6561b89fd.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$14d02186d6f6561b89fd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$3a08e9272f747351cac3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$3a08e9272f747351cac3.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$3a08e9272f747351cac3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$8048934ed96e29a14c9f$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$8048934ed96e29a14c9f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$8048934ed96e29a14c9f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$871d703b2a505748b5f6$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$871d703b2a505748b5f6.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$871d703b2a505748b5f6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$a3c586f44340c54eca86$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$a3c586f44340c54eca86.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$a3c586f44340c54eca86.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$f12d03f2dd156257c32c$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$f12d03f2dd156257c32c.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/config-classes/$f12d03f2dd156257c32c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/src/main/scala/dao/TweetDao.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/src/main/scala/dao/TweetDao.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/src/main/scala/dao/impl/TweetDaoImpl.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/src/main/scala/dao/impl/TweetDaoImpl.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/src/main/scala/dto/Tweet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/src/main/scala/dto/Tweet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/src/main/scala/service/TweetService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/src/main/scala/service/TweetService.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/src/test/scala/MainTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/src/test/scala/MainTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/Main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/dao/TweetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/dao/TweetDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/dao/impl/TweetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/dao/impl/TweetDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/dto/Tweet$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/dto/Tweet$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/dto/Tweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/dto/Tweet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/service/TweetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/classes/service/TweetService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/test-classes/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/test-classes/MainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/update/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnlineLesson1/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineLesson1/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="22a09ea2-7bfb-44a4-8a83-344d9cc7ec3e" />
+        <option name="url" value="https://github.com/keylou/Scala" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2ST4GuBIHDGwrzKwxRLxKBc62KS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07eb6b3c-1189-48a3-b4c2-df7c65b7c0bc" name="Changes" comment="" />
+      <created>1689157146499</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689157146499</updated>
+    </task>
+    <servers />
+  </component>
+</project>

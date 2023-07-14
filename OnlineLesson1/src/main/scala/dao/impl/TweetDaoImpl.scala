@@ -11,13 +11,14 @@ class TweetDaoImpl extends TweetDao {
 
   def save(tweet: Tweet): Tweet = {
     if (feed.contains(tweet.id))
-      redact(tweet.id, tweet.text)
+      redact(tweet.id, tweet.text).get
     else {
       println("Added")
-      tweet.id = nextId
-      feed += tweet.id -> tweet
+      // Для работы с неизменяемыми полями
+      val newTweet = tweet.copy(id = nextId)
+      feed += tweet.id -> newTweet
       nextId += 1
-      tweet
+      newTweet
     }
   }
 
@@ -30,15 +31,17 @@ class TweetDaoImpl extends TweetDao {
       println("Not deleted")
   }
 
-  def redact(tweetId: Int, text: String): Tweet = {
-    if (feed.contains(tweetId)) {
-      println("Redacted")
-      feed(tweetId).text = text
+  def redact(tweetId: Int, text: String): Option[Tweet] = {
+    feed.get(tweetId) match {
+      case Some(value) =>
+        println("Redacted")
+        val returnTweet = value.copy(text=text)
+        feed += value.id -> returnTweet
+        Option(returnTweet)
+      case None =>
+        println("Not redacted")
+        None
     }
-    else
-      println("Not redacted")
-
-    feed(tweetId)
   }
 
   def get(tweetId: Int): Option[Tweet] = {
