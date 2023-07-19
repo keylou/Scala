@@ -5,11 +5,11 @@ import dao.impl.TweetDaoImpl
 object Main extends App {
   // 1 -> "textA", 2 -> textB, 3 -> "textC"
 
-  private val Tweet1 = Tweet("textA", "Alex")
-  private val Tweet2 = Tweet("textB", "Bob")
+  private val Tweet1 = Tweet("textAdfafasfsafa", "Alex")
+  private val Tweet2 = Tweet("textBasffsa", "Bob")
   private val Tweet3 = Tweet("textC", "Clara")
   private val F:TweetDao = new TweetDaoImpl
-  F.save(Tweet1)
+  val tmpTweet1 = F.save(Tweet1)
   F.save(Tweet2)
   F.save(Tweet3)
   println(F.getFeed)
@@ -28,4 +28,9 @@ object Main extends App {
 
   private val FoundTweet2 = F.get(Tweet2.id)
   println(FoundTweet2)
+
+  private val m = F.findLongerThan(2)
+  println(m)
+
+  F.countAllLetters()
 }
