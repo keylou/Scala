@@ -3,17 +3,18 @@ package dao
 import dto.Tweet
 
 import scala.collection.mutable
+import scala.concurrent.Future
 
 trait TweetDao {
   def getFeed: mutable.HashMap[Int, Tweet]
-  def save(tweet: Tweet): Tweet
+  def save(tweet: Tweet): Future[Tweet]
   def delete(tweetId: Int): Unit
-  def redact(tweetId: Int, text: String): Option[Tweet]
-  def get(tweetId: Int): Option[Tweet]
+  def redact(tweetId: Int, text: String): Future[Option[Tweet]]
+  def get(tweetId: Int): Future[Option[Tweet]]
   def cleanAll (): Unit
   def findMinLength(): Int
   def findMaxLength(): Int
-  def findMaxLengthT(): Option[Tweet]
-  def findLongerThan(length: Int): mutable.HashMap[Int, Tweet]
+  def findMaxLengthT(): Future[Option[Tweet]]
+  def findLongerThan(length: Int): Future[mutable.HashMap[Int, Tweet]]
   def countAllLetters(): Unit
 }

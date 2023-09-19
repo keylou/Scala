@@ -3,47 +3,57 @@ package dao.impl
 import dto.Tweet
 import dao.TweetDao
 
-import scala.:+
-import scala.collection.IterableOnce.iterableOnceExtensionMethods
+import java.util.concurrent.{SynchronousQueue, ThreadPoolExecutor, TimeUnit}
 import scala.collection.mutable
-import scala.collection.immutable
+import java.util.concurrent.atomic.AtomicReference
+import scala.concurrent.{ExecutionContext, Future}
 
 class TweetDaoImpl extends TweetDao {
-  private var feed = new mutable.HashMap[Int, Tweet]
+  private var feed = new AtomicReference[mutable.HashMap[Int, Tweet]]
   private var nextId: Int = 1
 
-  def save(tweet: Tweet): Tweet = {
-    if (feed.contains(tweet.id))
-      redact(tweet.id, tweet.text).get
+  implicit val ec2: ExecutionContext = ExecutionContext.fromExecutor(
+    new ThreadPoolExecutor(
+      1,
+      10,
+      100L,
+      TimeUnit.SECONDS,
+      new SynchronousQueue[Runnable]()
+    )
+  )
+
+  def save(tweet: Tweet): Future[Tweet] = {
+    if (feed.get().contains(tweet.id))
+      redact(tweet.id, tweet.text)
     else {
       println("Added")
       // Для работы с неизменяемыми полями
       val newTweet = tweet.copy(id = nextId)
-      feed += newTweet.id -> newTweet
+      feed.get() += newTweet.id -> newTweet
       nextId += 1
-      newTweet
+      Future(newTweet)
     }
   }
 
   def delete(tweetId: Int): Unit = {
-    if (feed.contains(tweetId)) {
+    if (feed.get().contains(tweetId)) {
       println("Deleted")
-      feed -= tweetId
+      feed.get() -= tweetId
     }
     else
       println("Not deleted")
   }
 
-  def redact(tweetId: Int, text: String): Option[Tweet] = {
-    feed.get(tweetId) match {
+  def redact(tweetId: Int, text: String): Future[Option[Tweet]] = {
+    feed.get().get(tweetId) match {
       case Some(value) =>
         println("Redacted")
         val returnTweet = value.copy(text = text)
-        feed += value.id -> returnTweet
-        Option(returnTweet)
+        feed.get() += value.id -> returnTweet
+        Future(Option(returnTweet))
       case None =>
         println("Not redacted")
-        None
+        Future(None)
     }
   }
 
