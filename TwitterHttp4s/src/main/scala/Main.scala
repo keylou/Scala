@@ -1,5 +1,6 @@
-// bad version without tapir library, IO.ref, etc.import cats._
+// bad version without tapir library, IO.ref, etc.
 
+import cats._
 import cats.effect._
 import cats.implicits._
 import org.http4s.circe._
